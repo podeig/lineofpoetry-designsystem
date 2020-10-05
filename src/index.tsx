@@ -8,3 +8,11 @@ interface Props {
 export const ExampleComponent = ({ text }: Props) => {
   return <div className={styles.test}>Example Component: {text}</div>
 }
+
+interface LopButtonProps {
+  title: string
+}
+
+export const LopButton = ({ title }: LopButtonProps) => {
+  return <button>{title}</button>
+}
